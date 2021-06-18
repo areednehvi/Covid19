@@ -1,0 +1,57 @@
+{
+  "patients": [
+    {
+      "id": "1",
+      "name": "Arif Nazir",
+      "email": "areednazir@gmail.com",
+      "phoneno": "2342343243",
+      "aadhar": "Afgdhh3333",
+      "status": "Recovered"
+    },
+    {
+      "id": "2",
+      "name": "Srinath1",
+      "email": "srinath@gmail.com1",
+      "phoneno": "1234567890",
+      "aadhar": "M898hjk761",
+      "status": "Positive"
+    },
+    {
+      "id": "3",
+      "name": "Vikas Kintali",
+      "email": "vikas@gmail.com",
+      "phoneno": "6398532147",
+      "aadhar": "sdsdse2",
+      "status": "Negative"
+    },
+    {
+      "id": "4",
+      "name": "Deepti",
+      "email": "deepti@gmail.com",
+      "phoneno": "3698523657",
+      "aadhar": "df5678jg",
+      "status": "Positive"
+    },
+    {
+      "id": "5",
+      "name": "Sheeba Nazir",
+      "email": "sheeba@gmail.com",
+      "phoneno": "2314569873",
+      "aadhar": "fd345hfbg",
+      "status": "Recovered"
+    },
+    {
+      "id": "6",
+      "name": "Gauri Khan",
+      "email": "gauri@gmail.com",
+      "phoneno": "1234567890",
+      "aadhar": "sdcv534556",
+      "status": "Negative"
+    }
+  ],
+  "statuses": [
+    "Recovered",
+    "Positive",
+    "Negative"
+  ]
+}

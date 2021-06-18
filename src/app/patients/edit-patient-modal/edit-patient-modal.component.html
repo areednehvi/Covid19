@@ -1,0 +1,54 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <div class="modal-title h4" id="example-modal-sizes-title-lg">
+      <ng-container *ngIf="patient">
+        Modiy patient
+      </ng-container>
+    </div>
+  </div>
+  <div class="overlay overlay-block cursor-default modal-body">
+    <ng-container *ngIf="patient">
+      <form action="#" class="form form-label-right">
+        <div class="form-group row">
+          <div class="col-lg-4">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control form-control-lg form-control-solid" ngNativeValidate name="name" required [(ngModel)] = "patient.name" 
+              placeholder="Name" autocomplete="off" />
+          </div>
+          <div class="col-lg-4">
+            <label class="form-label">Aadhar</label>
+            <input type="text" class="form-control form-control-lg form-control-solid" ngNativeValidate name="aadhar" required  [(ngModel)] = "patient.aadhar"
+              placeholder="Aadhar" autocomplete="off" />
+          </div>
+        </div>
+
+        <div class="form-group row">
+
+          <div class="col-lg-4">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control form-control-lg form-control-solid" ngNativeValidate name="email" required [(ngModel)] = "patient.email"
+              placeholder="Email" autocomplete="off" />
+          </div>
+          <div class="col-lg-4">
+            <label class="form-label">Phone</label>
+            <input type="text" class="form-control form-control-lg form-control-solid" ngNativeValidate name="phoneno" required maxlength="10" [(ngModel)] = "patient.phoneno"
+              placeholder="Phone" autocomplete="off" />
+          </div>
+          <div class="col-lg-4">
+            <label class="form-label">Status</label>
+            <select class="form-control form-control-lg form-control-solid" name="status" ngNativeValidate required [(ngModel)] = "patient.status">
+              <option *ngFor = "let status of statuses;" value="{{status}}"> {{status}} </option>
+            </select>
+          </div>
+        </div>      
+      </form>
+    </ng-container>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-light btn-elevate mr-2" (click)="modal.dismiss()">Cancel</button>
+    <ng-container *ngIf="patient">
+
+      <button type="submit" class="btn btn-primary btn-elevate" (click)="update()">Update</button>
+    </ng-container>
+  </div>
+</div>
